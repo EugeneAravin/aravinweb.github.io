@@ -1,0 +1,50 @@
+/* Header */
+
+.codrops-header {
+	padding: 2.5em 2em 0;
+	position: relative;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 100;
+}
+
+.demo-1 .codrops-header {
+	position: absolute;
+}
+
+/* Demo links */
+.nosupport {
+	display: none;
+	margin: 0 auto;
+	font-size: 1.25em;
+	padding: 1em;
+	position: fixed;
+	bottom: 0;
+	width: 100vw;
+	text-align: center;
+	background: #a74e71;
+	z-index: 1000;
+}
+
+.no-webgl .nosupport {
+	display: block;
+}
+
+@media screen and (max-width: 50em) {
+	.codrops-header {
+		padding: 1.5em;
+		text-align: center;
+		display: block;
+		font-size: 0.75em;
+	}
+	.codrops-links {
+		display: block;
+		margin: 0 0 1em;
+	}
+	.codrops-demos {
+		width: 100%;
+		font-size: 120%;
+		margin: 1em 0 0 0;
+	}
+}
